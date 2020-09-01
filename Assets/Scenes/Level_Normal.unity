@@ -293,6 +293,7 @@ GameObject:
   - component: {fileID: 506716583}
   - component: {fileID: 506716581}
   - component: {fileID: 506716582}
+  - component: {fileID: 506716587}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -401,10 +402,26 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.08, y: -3.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1717042368}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &506716587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506716580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc6e565ecbcdea846a7d2d80b8a43323, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 3252078104746380662, guid: 9290c441ef61fde43a7b36264e4bc2c6, type: 3}
+  projectile_start: {fileID: 1717042368}
+  fire_speed: 20
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,6 +692,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1717042367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1717042368}
+  m_Layer: 0
+  m_Name: projectile_Start
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1717042368
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717042367}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.53, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 506716586}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1841051375
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,6 +752,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Green_Enemy_Prefab: {fileID: 2151282668391025079, guid: ec9a87e8e8c7e0448aa15db04d8f94e2, type: 3}
+  max_spawn: 20
+  spawn_cubes: 2
   spawn_position: {x: 0, y: 0, z: 0}
 --- !u!4 &1841051377
 Transform:
