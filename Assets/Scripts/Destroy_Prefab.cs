@@ -6,6 +6,7 @@ public class Destroy_Prefab : MonoBehaviour
 {
     public GameObject prefab;
     float despawn_distance = -5.0f;
+    public int destroyed_cubes;
     // Start is called before the first frame update
     void Update()
     {      

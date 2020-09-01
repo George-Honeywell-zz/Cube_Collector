@@ -16,6 +16,7 @@ public class Fire_Projectile : MonoBehaviour
         {
             Rigidbody p = Instantiate(projectile, projectile_start.position, transform.rotation);
             p.velocity = transform.up * fire_speed;
+            
         }
     }
 }
