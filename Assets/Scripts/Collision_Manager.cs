@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Collision_Manager : MonoBehaviour
 {
-    Destroy_Prefab destroy_prefab;
     public Text cube_score;
     int score = 0;
     

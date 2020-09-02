@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Destroy_Prefab : MonoBehaviour
 {
     public GameObject prefab;
-    float despawn_distance = -5.0f;
+    public float despawn_distance = -5.0f;
     public int missed_cubes = 0;
 
  

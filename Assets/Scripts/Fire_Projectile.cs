@@ -15,8 +15,7 @@ public class Fire_Projectile : MonoBehaviour
         if(Input.GetButtonDown("Fire1"))
         {
             Rigidbody p = Instantiate(projectile, projectile_start.position, transform.rotation);
-            p.velocity = transform.up * fire_speed;
-            
+            p.velocity = transform.up * fire_speed;   
         }
     }
 }
