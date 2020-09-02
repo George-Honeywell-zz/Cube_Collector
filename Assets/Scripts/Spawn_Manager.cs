@@ -33,27 +33,4 @@ public class Spawn_Manager : MonoBehaviour
          Instantiate(Green_Enemy_Prefab, spawn_position, Quaternion.identity);
          spawned_cubes++;
     }
-
-    //void Start()
-    //{
-
-    //    //while(spawned_cubes < set_spawn)
-    //    //{
-    //    //    spawn_position = new Vector3(Random.Range(-4.5f, 4.5f), 6.0f, 0); 
-    //    //    Instantiate(Green_Enemy_Prefab, spawn_position, Quaternion.identity);
-    //    //    spawned_cubes++;
-
-    //    //}
-    //    StartCoroutine("Spawn_Cubes");
-    //}
-
-    //IEnumerator Spawn_Cubes()
-    //{
-    //    spawn_position = new Vector3(Random.Range(-4.5f, 4.5f), 6.0f, 0);
-    //    Instantiate(Green_Enemy_Prefab, spawn_position, Quaternion.identity);
-    //    spawned_cubes++;
-
-    //    yield return new WaitForSeconds(0.1f);
-
-    //}
 }

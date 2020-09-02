@@ -5,21 +5,19 @@ using UnityEngine.UI;
 
 public class Collision_Manager : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject Enemy;
+    Destroy_Prefab destroy_prefab;
     public Text cube_score;
+    int score = 0;
     
     void OnTriggerEnter(Collider other)
-    {
-        int score = 0;
+    {      
         if(other.gameObject.CompareTag("Green_Enemy"))
-        {
-            
-            Debug.Log("Collected Cube");
+        {               
             Destroy(other.gameObject);
             score++;
-            cube_score.text = score.ToString();
-            
+            cube_score.text = score.ToString();          
         }
     }
+
+
 }
