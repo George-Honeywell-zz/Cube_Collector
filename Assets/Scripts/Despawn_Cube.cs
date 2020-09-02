@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Collision_Manager : MonoBehaviour
+public class Despawn_Cube : MonoBehaviour
 {
-    public Text cube_score;
-    int score = 0;   
+    public Text missed_cubes;
+    int missed = 0;
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Green_Enemy"))
         {
             Destroy(other.gameObject);
-            score++;
-            cube_score.text = score.ToString();
+            missed++;
+            missed_cubes.text = missed.ToString();
         }
     }
 }
