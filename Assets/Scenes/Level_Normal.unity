@@ -598,6 +598,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement_speed: 10
+  can_move_left: 1
+  can_move_right: 1
 --- !u!65 &506716583
 BoxCollider:
   m_ObjectHideFlags: 0
