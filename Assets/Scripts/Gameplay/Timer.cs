@@ -17,5 +17,11 @@ public class Timer : MonoBehaviour
             Debug.Log(time_left);
             time_text.text = time_left.ToString("00");
         }
+    
+        if(time_left <= 0)
+        {
+            Application.Quit();
+        }
+
     }
 }
