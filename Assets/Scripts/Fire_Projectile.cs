@@ -8,15 +8,14 @@ public class Fire_Projectile : MonoBehaviour
     public Transform projectile_start;
     public float fire_speed;
 
-
     // Update is called once per frame
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            Rigidbody p = Instantiate(projectile, projectile_start.position, transform.rotation);
-            p.velocity = transform.up * fire_speed;
-            Destroy(GameObject.FindGameObjectWithTag("Projectile"), 3.0f);
+            Rigidbody rb = Instantiate(projectile, projectile_start.position, transform.rotation);
+            rb.velocity = transform.up * fire_speed;
         }
+        
     }
 }
